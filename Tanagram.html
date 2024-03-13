@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangram Puzzle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Tanagram.js"></script>
+    <link rel="stylesheet" href="Tanagram.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tangram Puzzle</h1>
+        <div class="puzzle-container-flex">
+            <div class="puzzle-container">
+                <span class="puzzle-piece triangle" color="purple" id="triangle1"></span>
+                <span class="puzzle-piece triangle" color="blue" id="triangle2"></span>
+                <span class="puzzle-piece triangle" color="red" id="triangle3"></span>
+                <span class="puzzle-piece triangle" color="lightblue" id="triangle4"></span>
+                <span class="puzzle-piece triangle" color="purple" id="triangle5"></span>
+                <span class="puzzle-piece rhombus" color="orange" id="rhombus"></span>
+                <span class="puzzle-piece diamond" color="lightgreen" id="diamond"></span>
+            </div>
+            <div class="puzzle-container-transparent">
+                <img src="Tangram.JPG" alt="noImage" style="height: 375px; width: 505px">
+            </div>
+        </div>
+        <input title="selectorIndicator" type="text" id="selectedPieceId" readonly>
+        <div id="marker"></div>
+        <div class="controls">
+            <button id="rotate"><span class="glyphicon glyphicon-repeat"></span></button>
+            <button id="left"><span class="glyphicon glyphicon-arrow-left"></span></button>
+            <button id="right"><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button id="up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+            <button id="down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+        </div>
+    </div>
+</body>
+</html>

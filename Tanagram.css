@@ -1,0 +1,121 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.puzzle-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.puzzle-container-transparent {
+    width: 520px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+    z-index: -1;
+}
+
+.puzzle-container-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    align-items: center;
+}
+
+.puzzle-piece {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: move;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 5px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#triangle1 {
+    border-width: 210px 210px 0 0;
+    border-color: #8b008b transparent transparent transparent;
+    /*Beginning position*/
+    left: -105px;
+    top: 44px;
+    transform: rotate(135deg);
+}
+
+#triangle2 {
+    border-width: 210px 0 0 210px;
+    border-color: #1e90ff transparent transparent transparent;
+    /*Beginning position*/
+    left: 42.9263px;
+    top: -105px;
+    transform: rotate(135deg);
+}
+
+#triangle3 {
+    border-width: 102px 0px 0px 102px;
+    border-color: #ff0000 transparent transparent transparent;
+    /*Beginning position*/
+    left: 246px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+#triangle4 {
+    border-width: 102px 0px 0px 102px;
+    border-color: #5f9ea0 transparent transparent transparent;
+    /*Beginning position*/
+    left: 97px;
+    top: 170px;
+    transform: rotate(315deg);
+}
+
+#triangle5 {
+    border-width: 150px 0 0 150px;
+    border-color: #663399 transparent transparent transparent;
+    /*Beginning position*/
+    left: 146px;
+    top: 146px;
+    transform: rotate(90deg);
+}
+
+.rhombus {
+    width: 145px;
+    height: 75px;
+    background-color: #ffa500;
+    transform: skew(315deg);
+    /*Beginning position*/
+    left: 38px;
+    top: 221px;
+}
+
+.diamond {
+    width: 104px;
+    height: 110px;
+    background-color: #008000;
+    transform: rotate(45deg);
+    /*Beginning position*/
+    left: 171px;
+    top: 91px;
+}
+
+#marker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+}
